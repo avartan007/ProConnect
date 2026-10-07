@@ -1,0 +1,252 @@
+.scrollComponent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 4rem;
+}
+
+.createPostContainer {
+    display: flex;
+    min-height: 92px;
+    width: 100%;
+    padding-inline: 0.8rem;
+    gap: 1.3rem;
+    position: relative;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e1e8f1;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(31, 58, 91, 0.06);
+}
+
+.uploadButton {
+    position: absolute;
+    right:0;
+    bottom: -2.8rem;
+    background: #2168ad;
+    color: white;
+    border-radius: 10px;
+    padding-inline: 0.8rem;
+    padding-block: 0.6rem;
+    cursor: pointer;
+    border: 0;
+    font: inherit;
+}
+
+.uploadButton:disabled,
+.postCommentContainer__commentBtn:disabled {
+    cursor: wait;
+    opacity: 0.55;
+}
+
+.userProfile {
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    width: fit-content;
+}
+
+.Fab {
+    background: #eef5fc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Fab > svg {
+    width:fit-content;
+    height: 40px;
+    color: #2168ad;
+    width: 42px;
+    height: 42px;
+}
+
+.textAreaOfContent {
+    width: 80%;
+    height: 70%;
+    border: 1px solid #dbe3ee;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-inline: 1.5rem;
+    padding-block: 0.9rem;
+    outline: none;
+}
+
+.postContainer{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.singleCard {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e1e8f1;
+    border-radius: 16px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 22px rgba(31, 58, 91, 0.05);
+}
+
+.postImg img{
+    width:100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.singleCard__profileContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.postImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.3rem;
+    height: fit-content;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.del {
+    width: 100%;
+}
+
+.del2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.optionsContainer {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.75rem 0 0;
+    border-top: 1px solid #edf1f6;
+}
+
+.singleOption__optionsContainer > svg{
+    height: 100%;
+    width: 1.35rem;
+    cursor: pointer;
+    min-width: 1rem;
+}
+
+.singleOption__optionsContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.commentsContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allCommentsContainer {
+    width: 40vw;
+    height: 80vh;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+    min-width: 40svw;
+    max-width: 1120px;
+}
+
+.postCommentContainer {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.postCommentContainer > input {
+    position: static;
+    width: auto;
+    flex: 0.9;
+    padding-inline: 1.5rem;
+    padding-block: 1.2rem;
+    border: none;
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+    outline: none;
+    bottom: auto;
+    left: auto;
+}
+
+.postCommentContainer > input:focus {
+    border: 1px solid silver;
+}
+
+.postCommentContainer__commentBtn {
+    flex: 0.1;
+    position: static;
+    width: fit-content;
+    padding: 1rem;
+    background: orange;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    bottom: auto;
+    left: auto;
+    border: 0;
+    font: inherit;
+}
+
+.singleComment__profileContainer {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.singleComment__profileContainer > img {
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .scrollComponent {
+        padding-inline: 0.75rem;
+    }
+    .allCommentsContainer{
+        width: 90svw;
+    }
+    .postCommentContainer>input{
+        left: auto;
+        bottom: auto;
+        width: 100%;
+    }
+    .postCommentContainer>div{
+        left: auto;
+        bottom: auto;
+    }
+}

@@ -1,0 +1,100 @@
+.container {
+    padding: 1.3rem;
+    background: white;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 6vh;
+}
+
+.backDropContainer {
+    height: 30vh;
+    background: url("https://kaiz-in.com/wp-content/uploads/elementor/thumbs/Education-LinkedIn-Cover-Banner-4-1-qyadcwxfp3qx9ju2gltlwzlzzsb0qs0lh8h5abgznc.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.backDropContainer img {
+    height: 9em;
+    width: 9em;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -35%;
+    left: 6%;
+    text-align: center;
+}
+
+.profileContainer__details {
+    padding-top: 5rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.card__profileContainer {
+    display: flex;
+}
+
+.card__profileContainer >img {
+    width: 3.4rem;
+    height: auto;
+    height: 3.4rem;
+    object-fit: cover;
+}
+
+.connectBtn {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(3, 93, 183, 0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.connectedButton {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: white;
+    outline: rgba(3, 93, 183, 0.905);
+    border: 1.5px solid rgba(3, 93, 183, 0.905);
+    color: rgba(3, 93, 183, 0.905);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.workHistoryContainer {
+    display: flex;
+    padding-top: 1rem;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.workHistoryCard {
+    min-width: fit-content;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(173, 173, 173);
+}
+
+.profileContainer__flex {
+    display: flex;
+    gap: 0.7rem;
+}
+
+@media only screen and (max-width:600px) {
+    .profileContainer__flex{
+        flex-direction: column;
+    }
+}

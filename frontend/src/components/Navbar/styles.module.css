@@ -1,0 +1,38 @@
+.container{
+    padding: 1.1rem clamp(1.25rem, 5vw, 5rem);
+    background: rgba(255,255,255,0.9);
+    border-bottom: 1px solid #e7edf5;
+    position: relative;
+    z-index: 1;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar h1 {
+    color: #163e70;
+    font-size: 1.45rem;
+    letter-spacing: -0.05em;
+}
+
+.navBarOptionContainer{
+    display: flex;
+}
+
+.buttonJoin {
+    background: #2168ad;
+    color: white;
+    border-radius: 9px;
+    padding-block: 0.6rem;
+    padding-inline: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttonJoin:hover {
+    background: #174f89;
+}
